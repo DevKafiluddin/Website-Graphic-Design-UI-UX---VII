@@ -1,0 +1,273 @@
+/* ==========================================================================
+   KILN & GRAIN — RESPONSIVE LAYOUT SYSTEM
+   Breakpoints: 1440px, 1280px, 1024px, 768px, 480px, 375px
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. LARGE DESKTOP & SCREEN TWEAKS (1440px +)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  :root {
+    --container-max: 1400px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. DESKTOP / SMALL LAPTOP (1025px – 1280px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  .hero-grid {
+    gap: 3rem;
+  }
+
+  .intro-split, .material-grid, .faq-layout, .contact-layout {
+    gap: 3.5rem;
+  }
+
+  .footer-top-grid {
+    gap: 2.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. TABLET LANDSCAPE & PORTRAIT (769px – 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  :root {
+    --container-padding: 1.75rem;
+    --space-xl: 5rem;
+  }
+
+  /* Navigation */
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  /* Hero Section */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .hero-content {
+    align-items: flex-start;
+  }
+
+  .hero-image-wrap {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* Intro Section */
+  .intro-split {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* Projects Section */
+  .project-item-asymmetric,
+  .project-item-asymmetric.reverse {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Services Section */
+  .service-row {
+    grid-template-columns: 0.4fr 1.6fr 1fr 0.4fr;
+    gap: 1rem;
+    padding: 1.75rem 0.5rem;
+  }
+
+  /* Material Section */
+  .material-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .material-media-box {
+    aspect-ratio: 16/10;
+  }
+
+  /* Process Timeline */
+  .process-timeline {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+
+  /* About Hero */
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  /* Approach Section */
+  .approach-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Gallery Grid */
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  /* Contact Page */
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .contact-info-panel {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--border-light);
+    padding-top: 3rem;
+  }
+
+  /* Footer */
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. MOBILE DEVICES (Up to 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 1.25rem;
+    --space-xl: 4rem;
+    --space-lg: 3rem;
+  }
+
+  .site-header {
+    padding: 1.25rem 0;
+  }
+
+  .logo-title {
+    font-size: 1.25rem;
+  }
+
+  .hero-section, .about-hero, .projects-page-hero, .contact-hero {
+    padding-top: 8.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .hero-actions .btn, .hero-actions .text-link {
+    justify-content: center;
+  }
+
+  .hero-metadata-row {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .hero-image-badge {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: -1px;
+    padding: 1.25rem;
+  }
+
+  /* Intro Section */
+  .intro-statement {
+    font-size: 1.75rem;
+  }
+
+  .intro-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  /* Services Editorial List */
+  .service-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 1.75rem 0;
+  }
+
+  .service-arrow {
+    display: none;
+  }
+
+  /* Process Timeline */
+  .process-timeline {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* FAQ Section */
+  .faq-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .faq-button {
+    font-size: 1.15rem;
+  }
+
+  /* Approach Section */
+  .approach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Gallery Grid */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* Footer */
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. SMALL MOBILE PHONES (375px – 430px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 430px) {
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .filter-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
