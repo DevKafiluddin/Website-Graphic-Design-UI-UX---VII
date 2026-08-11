@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — [STUDIO NAME] Architectural Millwork</title>
+  <meta name="description" content="Inquire about custom architectural millwork, luxury cabinetry, and joinery consultations.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       UNIVERSAL HEADER
+       ========================================================================= -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="logo-brand" aria-label="Home">
+        <div class="logo-placeholder-box">
+          <span>[ KILN & GRAIN ]</span>
+        </div>
+        <span class="logo-subtitle">ARCHITECTURAL MILLWORK</span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="index.html#process" class="nav-link">Our Process</a></li>
+          <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="contact.html" class="btn btn-primary">Start a Project</a>
+        <button class="mobile-menu-toggle" aria-label="Open mobile menu">
+          <img src="assets/icons/menu.svg" alt="Menu" width="24" height="24">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <div class="mobile-nav-header">
+      <a href="index.html" class="logo-brand">
+        <div class="logo-placeholder-box">
+          <span>[ PLACEHOLDER LOGO ]</span>
+        </div>
+        <span class="logo-subtitle">ARCHITECTURAL MILLWORK</span>
+      </a>
+      <button class="mobile-close-btn" aria-label="Close mobile menu">
+        <img src="assets/icons/close.svg" alt="Close" width="24" height="24">
+      </button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html"><span>Home</span> <span>→</span></a>
+      <a href="about.html"><span>About</span> <span>→</span></a>
+      <a href="projects.html"><span>Projects</span> <span>→</span></a>
+      <a href="index.html#process"><span>Our Process</span> <span>→</span></a>
+      <a href="index.html#faq"><span>FAQ</span> <span>→</span></a>
+      <a href="contact.html"><span>Contact</span> <span>→</span></a>
+    </div>
+    <div class="mobile-nav-footer">
+      <span class="metadata-text">CITY, COUNTRY — REPLACE</span>
+      <span class="metadata-text">HELLO@COMPANY.COM</span>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- =========================================================================
+         CONTACT HERO SECTION
+         ========================================================================= -->
+    <section class="contact-hero">
+      <div class="container" style="max-width: 900px;">
+        <div class="eyebrow">INQUIRIES &amp; COMMISSIONS</div>
+        <h1 class="hero-title">Let’s build something distinct.</h1>
+        <p class="hero-subtitle">
+          Inquire about new commissions, architectural collaborations, or custom millwork consultations.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         CONTACT FORM & STUDIO DETAILS LAYOUT
+         ========================================================================= -->
+    <section class="contact-form-section">
+      <div class="container contact-layout">
+        
+        <!-- Form Column -->
+        <div>
+          <form id="contact-inquiry-form" class="contact-form">
+            <div class="form-group">
+              <label for="full-name" class="form-label">Full Name *</label>
+              <input type="text" id="full-name" name="name" class="form-input" placeholder="Your Name" required>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="name@domain.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">Telephone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+00 (0) 000 0000">
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+              <div class="form-group">
+                <label for="project-type" class="form-label">Scope of Commission *</label>
+                <select id="project-type" name="project_type" class="form-select" required>
+                  <option value="">Select Scope</option>
+                  <option value="residential-millwork">Custom Residential Millwork</option>
+                  <option value="luxury-kitchen">Luxury Kitchen &amp; Cabinetry</option>
+                  <option value="fluted-paneling">Fluted Timber Paneling</option>
+                  <option value="commercial-joinery">Commercial Architectural Joinery</option>
+                  <option value="heritage-restoration">Restoration &amp; Historic Woodwork</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="budget" class="form-label">Estimated Budget Range</label>
+                <select id="budget" name="budget" class="form-select">
+                  <option value="">Select Range</option>
+                  <option value="range-1">$25,000 – $50,000</option>
+                  <option value="range-2">$50,000 – $100,000</option>
+                  <option value="range-3">$100,000 – $250,000</option>
+                  <option value="range-4">$250,000+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Project Details &amp; Timeline *</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Please describe your space, architectural drawings status, target timeline, and desired materials..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+              Start a Conversation
+              <img src="assets/icons/arrow-right.svg" alt="" width="16" height="16">
+            </button>
+          </form>
+        </div>
+
+        <!-- Studio Information Panel with Editable Placeholders -->
+        <div class="contact-info-panel">
+          <div class="info-block">
+            <span class="eyebrow">STUDIO LOCATION</span>
+            <h3 class="info-title">Studio &amp; Workshop</h3>
+            <p class="info-text">
+              [Studio Address - Replace]<br>
+              [Street Name &amp; Suite]<br>
+              [City, Postal Code, Country]
+            </p>
+            <p class="info-text" style="margin-top: 0.5rem;">
+              Tel: +00 (0) 000 0000
+            </p>
+          </div>
+
+          <div class="info-block">
+            <span class="eyebrow">DIRECT EMAIL</span>
+            <h3 class="info-title">Inquiries &amp; Consultations</h3>
+            <p class="info-text">
+              For general project inquiries, architectural drawings review, or material consultations:
+            </p>
+            <a href="mailto:hello@company.com" class="text-link" style="margin-top: 0.5rem;">hello@company.com →</a>
+          </div>
+
+          <div class="info-block">
+            <span class="eyebrow">ARCHITECT &amp; DESIGNER PORTAL</span>
+            <h3 class="info-title">Trade Collaborations</h3>
+            <p class="info-text">
+              We provide architects and interior designers with CAD drafting support, material swatches, and site measurement coordination.
+            </p>
+          </div>
+
+          <div class="project-media-wrap aspect-landscape" style="margin-top: 1rem;">
+            <img src="https://i.ibb.co.com/VcCHLmQ4/Screenshot-2026-08-11-064830.png" alt="Architectural Timber Samples & Drawings">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       UNIVERSAL DARK FOOTER
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="logo-brand" aria-label="Home">
+            <div class="logo-placeholder-box">
+              <span>[ KILN & GRAIN ]</span>
+            </div>
+            <span class="logo-subtitle">ARCHITECTURAL MILLWORK</span>
+          </a>
+          <p class="footer-brand-text">
+            Bespoke carpentry and architectural millwork studio dedicated to precision craftsmanship, timeless materials, and custom joinery.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#process">Our Process</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Capabilities</h4>
+          <ul class="footer-links">
+            <li><a href="projects.html">Custom Cabinetry</a></li>
+            <li><a href="projects.html">Architectural Millwork</a></li>
+            <li><a href="projects.html">Fluted Wood Paneling</a></li>
+            <li><a href="projects.html">Built-In Joinery</a></li>
+            <li><a href="projects.html">Commercial Woodwork</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Direct Contact</h4>
+          <ul class="footer-links">
+            <li><span style="color: rgba(244,241,234,0.5);">Email Placeholder:</span></li>
+            <li><a href="mailto:hello@company.com">hello@company.com</a></li>
+            <li style="margin-top: 0.5rem;"><span style="color: rgba(244,241,234,0.5);">Phone Placeholder:</span></li>
+            <li><a href="tel:+00000000000">+00 (0) 000 0000</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 [STUDIO NAME]. ALL RIGHTS RESERVED.</div>
+        <div class="footer-social-row">
+          <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="Instagram" width="18" height="18"></a>
+          <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="Facebook" width="18" height="18"></a>
+          <span style="margin: 0 0.5rem; color: rgba(244,241,234,0.2);">|</span>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
